@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity comp_jc is
+generic(m: std_logic_vector(0 to 5):="011001");
+  port ( rst, clk: std_logic;
+         y: out std_logic);
+end comp_jc;
+
+architecture arch_cjc of comp_jc is
+component jc
+   port ( R : in    std_logic_vector (5 downto 0); 
+          S : in    std_logic_vector (5 downto 0); 
+          Y : out   std_logic);
+end component;
+
+signal jcr,jcs: std_logic_vector(0 to 5);
+begin
+  process (rst)
+    begin
+      if (rst='1') then
+        jcs<= m;
+        jcr<= not m;
+        enddif;
+        end process;
+    C1: jc
+      port map (jcr,jcs,

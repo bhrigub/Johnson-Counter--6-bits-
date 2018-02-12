@@ -1,0 +1,73 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : jc.vf
+// /___/   /\     Timestamp : 04/11/2015 17:49:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family virtex4 -verilog "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.vf" -w "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch"
+//Design Name: jc
+//Device: virtex4
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module jc(R, 
+          S, 
+          Y);
+
+    input [5:0] R;
+    input [5:0] S;
+   output Y;
+   
+   wire clk;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_25;
+   wire XLXN_28;
+   wire XLXN_29;
+   wire Y_DUMMY;
+   
+   assign Y = Y_DUMMY;
+   FDCP #( .INIT(1'b0) ) XLXI_1 (.C(clk), 
+                .CLR(R[0]), 
+                .D(XLXN_25), 
+                .PRE(S[0]), 
+                .Q(XLXN_12));
+   FDCP #( .INIT(1'b0) ) XLXI_2 (.C(clk), 
+                .CLR(R[1]), 
+                .D(XLXN_12), 
+                .PRE(S[1]), 
+                .Q(XLXN_13));
+   FDCP #( .INIT(1'b0) ) XLXI_3 (.C(clk), 
+                .CLR(R[2]), 
+                .D(XLXN_13), 
+                .PRE(S[2]), 
+                .Q(XLXN_14));
+   FDCP #( .INIT(1'b0) ) XLXI_4 (.C(clk), 
+                .CLR(R[3]), 
+                .D(XLXN_14), 
+                .PRE(S[3]), 
+                .Q(XLXN_28));
+   FDCP #( .INIT(1'b0) ) XLXI_5 (.C(clk), 
+                .CLR(R[4]), 
+                .D(XLXN_28), 
+                .PRE(S[4]), 
+                .Q(XLXN_29));
+   FDCP #( .INIT(1'b0) ) XLXI_6 (.C(clk), 
+                .CLR(R[5]), 
+                .D(XLXN_29), 
+                .PRE(S[5]), 
+                .Q(Y_DUMMY));
+   INV  XLXI_8 (.I(Y_DUMMY), 
+               .O(XLXN_25));
+endmodule

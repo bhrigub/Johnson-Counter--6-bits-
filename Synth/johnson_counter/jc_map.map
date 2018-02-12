@@ -1,0 +1,13 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Map Application Log File for Design 'jc'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area
+-ir off -pr off -c 100 -o jc_map.ncd jc.ngd jc.pcf 
+Target Device  : xc4vfx12
+Target Package : sf363
+Target Speed   : -12
+Mapper Version : virtex4 -- $Revision: 1.55 $
+Mapped Date    : Sat Apr 11 17:50:47 2015
+

@@ -1,0 +1,27 @@
+{C:/Users/Admin/Desktop/VHDL/Lab Work/150240133004/Lab 3 B/Q8/Src/004_tb.vhd} {1 {vcom -work work -2002 -explicit -vopt {C:/Users/Admin/Desktop/VHDL/Lab Work/150240133004/Lab 3 B/Q8/Src/004_tb.vhd}
+QuestaSim vcom 10.1d Compiler 2012.11 Nov  1 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity test
+-- Compiling architecture arch_test of test
+
+} {} {}} {C:/Users/Admin/Desktop/VHDL/Lab Work/150240133004/Lab 3 B/Q8/Src/comp_jc.vhd} {1 {vcom -work work -2002 -explicit -vopt {C:/Users/Admin/Desktop/VHDL/Lab Work/150240133004/Lab 3 B/Q8/Src/comp_jc.vhd}
+QuestaSim vcom 10.1d Compiler 2012.11 Nov  1 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comp_jc
+-- Compiling architecture arch_rc of comp_jc
+
+} {} {}} {C:/Users/Admin/Desktop/VHDL/Lab Work/150240133004/Lab 3 B/Q8/Src/jc.vhf} {1 {vcom -work work -2002 -explicit -vopt {C:/Users/Admin/Desktop/VHDL/Lab Work/150240133004/Lab 3 B/Q8/Src/jc.vhf}
+QuestaSim vcom 10.1d Compiler 2012.11 Nov  1 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package VCOMPONENTS
+-- Compiling entity jc
+-- Compiling architecture BEHAVIORAL of jc
+
+} {} {}}

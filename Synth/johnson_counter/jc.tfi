@@ -1,0 +1,11 @@
+// Verilog instantiation template created from schematic E:\VHDL\Lab Work\150240133004 B\Lab 3 B\Q8\Synth\johnson_counter\jc.sch - Sat Apr 11 17:50:09 2015
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   jc UUT (
+		.S(    ), 
+		.R(    ), 
+		.Y(    )
+   );

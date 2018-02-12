@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.xst" -ofn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.syr" 
+sch2verilog -intstyle ise -family virtex4 -tionly {} -tiext tfi -w {E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch} jc.tfi 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc4vfx12-sf363-12 "jc.ngc" jc.ngd  
+map -intstyle ise -p xc4vfx12-sf363-12 -global_opt off -cm area -ir off -pr off -c 100 -o jc_map.ncd jc.ngd jc.pcf 
+xst -intstyle ise -ifn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.xst" -ofn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.syr" 
+sch2vhdl -intstyle ise -family virtex4 -tionly -w {E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch} jc.vhi 
+sch2hdl -intstyle ise -family virtex4 -flat -suppress -vhdl jc.vhf -w {E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch} 
+sch2vhdl -intstyle ise -family virtex4 -tionly -w {E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch} jc.vhi 
+xst -intstyle ise -ifn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.xst" -ofn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.syr" 
+xst -intstyle ise -ifn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.xst" -ofn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.syr" 
+sch2vhdl -intstyle ise -family virtex4 -tionly -w {E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch} jc.vhi 
+xst -intstyle ise -ifn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.xst" -ofn "E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.syr" 
+sch2vhdl -intstyle ise -family virtex4 -tionly -w {E:/VHDL/Lab Work/150240133004 B/Lab 3 B/Q8/Synth/johnson_counter/jc.sch} jc.vhi 
